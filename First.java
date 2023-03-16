@@ -11,12 +11,13 @@ import org.openqa.selenium.support.ui.Select;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class First {
-	public static String browser;
+	public static String browser; 
 	static WebDriver Driver;
-
+	//toSetBrowser
 	public static void setBrowser() {
-		browser = "Firefox";
+		browser = "Firefox"; 
 	}
+	//toSetDriver
 	public static void setBrowserConfig() {
 		//String projectlocation= System.getProperty("user.dir"); 
 		if(browser=="Firefox") {
@@ -32,12 +33,13 @@ public class First {
 			WebDriverManager.edgedriver().setup();
 			Driver= new EdgeDriver();}
 	}
-	
+	//toRunURL
 	public static void runURL() {
 		Driver.manage().window().maximize();
 		Driver.manage().deleteAllCookies();
 		Driver.get("https://www.saucedemo.com/");
 	}
+	//Login
 	public static void logIn() {
 		WebElement user = ( Driver.findElement(By.xpath("//input[@id='user-name']")));
 		user.sendKeys("standard_user");
@@ -49,31 +51,32 @@ public class First {
 		WebElement submit = ( Driver.findElement(By.xpath("//input[@id='login-button']")));
 		submit.click();
 	}
+	//toClickonDrawer
 	public static void drawer() {
 		WebElement drawer = ( Driver.findElement(By.xpath("//button[@id='react-burger-menu-btn']")));
 		drawer.click();
 	}
 
 	public static void about() throws InterruptedException {	
-
+		//Find About and click from menu
 		Driver.findElement(By.xpath("//a[@id='about_sidebar_link'][@class='bm-item menu-item']")).click();
 
 		WebElement LearnMore = ( Driver.findElement(By.xpath("//a[@href='/enterprise']//button[@type='button'][normalize-space()='Learn more']")));
 		LearnMore.click();
 		Thread.sleep(3000);
+		//Frame handling of google sign-in Option
 		Driver.switchTo().frame(Driver.findElement(By.xpath("//iframe[@title='Sign in with Google Dialogue']")));
 		Driver.findElement(By.xpath("//div[@id='close'][@class='TvD9Pc-Bz112c ZYIfFd-aGxpHf-FnSee']")).click();
 		Driver.switchTo().defaultContent();	
 		Thread.sleep(3000);
 		Driver.findElement(By.xpath("//div[@id='onetrust-close-btn-container']//button[@class='onetrust-close-btn-handler banner-close-button ot-close-icon']")).click();
+		//navigation
 		Driver.navigate().back();
 		Driver.navigate().back();
 	}
 
 	public static void allItems() throws InterruptedException {	
-		
-		//Driver.findElement(By.xpath("//select[@class='product_sort_container']")).click();
-
+		//handling drop down and click on options
 		WebElement sort = Driver.findElement(By.xpath("//select[@class='product_sort_container']"));
 		sort.click();
 		Select sort_dd = new Select(sort);
@@ -154,7 +157,7 @@ public class First {
 
 		String title= Driver.getTitle();
 		System.out.println(title);
-
+		//assertion
 		//assert title.equals("Swag Labs") : "Title doesn't match";
 		if(title.equalsIgnoreCase("Swag Labs"))
 			System.out.println("Test passed !!!!");

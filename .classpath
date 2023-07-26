@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="Jars/ojdbc14-10.2.0.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/krishna.vadher/.m2/repository/com/sikulix/sikulixapi/2.0.5/sikulixapi-2.0.5.jar" sourcepath="C:/Users/krishna.vadher/.m2/repository/com/sikulix/sikulixapi/2.0.5/sikulixapi-2.0.5-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.sikulix"/>
+			<attribute name="maven.artifactId" value="sikulixapi"/>
+			<attribute name="maven.version" value="2.0.5"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/krishna.vadher/.m2/repository/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar" sourcepath="C:/Users/krishna.vadher/.m2/repository/com/jcraft/jsch/0.1.55/jsch-0.1.55-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.jcraft"/>
+			<attribute name="maven.artifactId" value="jsch"/>
+			<attribute name="maven.version" value="0.1.55"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/krishna.vadher/.m2/repository/org/apache/poi/poi/5.0.0/poi-5.0.0.jar" sourcepath="C:/Users/krishna.vadher/.m2/repository/org/apache/poi/poi/5.0.0/poi-5.0.0-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.apache.poi"/>
+			<attribute name="maven.artifactId" value="poi"/>
+			<attribute name="maven.version" value="5.0.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/krishna.vadher/.m2/repository/org/python/jython-slim/2.7.2/jython-slim-2.7.2.jar" sourcepath="C:/Users/krishna.vadher/.m2/repository/org/python/jython-slim/2.7.2/jython-slim-2.7.2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.python"/>
+			<attribute name="maven.artifactId" value="jython-slim"/>
+			<attribute name="maven.version" value="2.7.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
